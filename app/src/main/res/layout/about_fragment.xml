@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/view_background"
+    tools:context=".ui.fragment.about.AboutFragment">
+
+    <LinearLayout
+        android:id="@+id/login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/item_background"
+        android:padding="@dimen/activity_content_margin"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_dynamic_user" />
+
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            android:gravity="center_vertical"
+            android:text="登录"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_setting"
+        style="@style/item_text_style"
+        android:layout_marginTop="12dp"
+        android:text="设置" />
+
+    <View style="@style/div_line" />
+
+    <TextView
+        android:id="@+id/tv_website_url"
+        style="@style/item_text_style"
+        android:layout_marginTop="5dp"
+        android:text="更改地址" />
+
+    <View style="@style/div_line" />
+
+    <TextView
+        android:id="@+id/tv_about_me"
+        style="@style/item_text_style"
+        android:layout_marginTop="5dp"
+        android:visibility="visible"
+        android:text="关于我" />
+
+    <View style="@style/div_line" />
+
+    <TextView
+        android:id="@+id/tv_logout"
+        style="@style/item_text_style"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:text="退出登录" />
+
+
+</LinearLayout>

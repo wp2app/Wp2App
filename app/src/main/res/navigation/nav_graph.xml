@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="cn.wp2app.ui.fragment.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_browserActivity"
+            app:destination="@id/browserActivity" />
+        <action
+            android:id="@+id/action_mainFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_mainFragment_to_baseUrlActivity"
+            app:destination="@id/baseUrlActivity" />
+        <action
+            android:id="@+id/action_mainFragment_to_settingActivity"
+            app:destination="@id/settingActivity" />
+        <action
+            android:id="@+id/action_mainFragment_to_searchResultActivity"
+            app:destination="@id/searchResultActivity" />
+        <action
+            android:id="@+id/action_mainFragment_to_meActivity"
+            app:destination="@id/meActivity" />
+        <action
+            android:id="@+id/action_mainFragment_to_postActivity"
+            app:destination="@id/postActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/browserActivity"
+        android:name="cn.wp2app.ui.activity.BrowserActivity"
+        android:label="BrowserActivity" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="cn.wp2app.ui.activity.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/baseUrlActivity"
+        android:name="cn.wp2app.ui.activity.BaseUrlActivity"
+        android:label="activity_base_url"
+        tools:layout="@layout/activity_base_url" />
+    <activity
+        android:id="@+id/settingActivity"
+        android:name="cn.wp2app.ui.activity.SettingActivity"
+        android:label="activity_setting"
+        tools:layout="@layout/activity_setting" />
+    <activity
+        android:id="@+id/searchResultActivity"
+        android:name="cn.wp2app.ui.activity.SearchResultActivity"
+        android:label="activity_search_result"
+        tools:layout="@layout/activity_search_result" />
+    <activity
+        android:id="@+id/meActivity"
+        android:name="cn.wp2app.ui.activity.MeActivity"
+        android:label="activity_me"
+        tools:layout="@layout/activity_me" />
+    <activity
+        android:id="@+id/postActivity"
+        android:name="cn.wp2app.ui.activity.PostActivity"
+        android:label="activity_post"
+        tools:layout="@layout/activity_post" />
+</navigation>

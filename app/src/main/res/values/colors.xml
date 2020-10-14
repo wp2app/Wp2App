@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF0000</color>
+    <color name="colorPrimaryDark">#FF0000</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="view_background">#F6F1F1</color>
+    <color name="red">#FF0000</color>
+    <color name="gray">#848383</color>
+
+    <color name="light_gray">#e0e0e0</color>
+    <color name="txt_color">#48495F</color>
+    <color name="empty_view_background">#F0F0F0</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="eight">#888888</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="transparent2">#66000000</color>
+    <color name="black_ff_bg">#b01a1a1a</color>
+
+    <color name="window_background">#eeeeee</color>
+
+    <color name="text_color_default">#ff757575</color>
+    <color name="text_color_disabled">#8c757575</color>
+</resources>
